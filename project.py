@@ -6,6 +6,7 @@ st.title("Face Detection Project")
 clf=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 img_frm = st.image([])
 camera = cv2.VideoCapture(0)
+st.text(camera)
 b=st.button("stop camera")
 while True:
     _, frame = camera.read()
